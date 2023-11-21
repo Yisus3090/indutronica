@@ -374,6 +374,14 @@ input {
 /* Caorusel */
 
 
+
+
+/* Estilo para el <li> cuando el enlace está en estado hover */
+.dropdown-menu li:hover {
+  /* Agrega aquí tus estilos para el <li> en estado hover */
+  background-color: #009cd8;
+}
+
 .social-iconos {
   font-size: 40px;
   border: 1px solid white;
@@ -474,7 +482,33 @@ input {
 }
 .p1 {
   color: #ffffff;
+  
 }
+.p2{
+  color: #ffffff;
+  margin-right: 200px
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f1{
+  padding: 110px;
+}
+.f2{
+
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+.container_3{
+  display: flex;
+  background-color: #000000;
+  justify-content: space-evenly;
+}
+
+
 .bg1 {
   display: flex;
 }
@@ -8236,7 +8270,7 @@ footer.bg-theme .footer-bottom {
 }
 
 .pricing-style-two .pricing-item.active > i {
-  background: var(--color-secondary);
+  background: var(--color-secondary);ncbnn cncnjcmcmmcmcmmcmmmcmcmc
   color: var(--white);
 }
 

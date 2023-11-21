@@ -38,59 +38,88 @@
         <!-- Start Navigation -->
         <nav class="navbar navbar-default navbar-sticky dark bootsnav">
 
-        <div class="container-full">
-
-            <div class="row align-center">
-                
-
-                <!-- Start Header Navigation -->
-                <div class="col-lg-3 brand-item">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo.png" class="logo" alt="Logo">
-                        </a>
+            <div class="container-full">
+    
+                <div class="row align-center">
+                    
+    
+                    <!-- Start Header Navigation -->
+                    <div class="col-lg-3 brand-item">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/img/logo.png" class="logo" alt="Logo">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <!-- End Header Navigation -->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="col-lg-6">
-                    <div class="collapse navbar-collapse" id="navbar-menu">
-                        <ul class="nav navbar-nav" data-in="#" data-out="#">
-                            <li class=""> <a href="index.html" class="dropdown-toggle " data-toggle="dropdown" >Inicio</a> </li>
-                            <li class=""> <a href="soluciones.html" class="dropdown-toggle active" data-toggle="dropdown" >Soluciones Tecnologicas</a> </li>
-                            <li class=""> <a href="nosotros.html" class="dropdown-toggle" data-toggle="dropdown" >Nosotros</a>  </li>
-                            <li class=""> <a href="contactanos.html" class="dropdown-toggle " data-toggle="dropdown" >Contactanos</a>  </li>
-                            <!-- <li class=""> <a href="#casos_exito" class="dropdown-toggle" data-toggle="dropdown" >Casos de Éxito</a> </li> -->
-                        </ul>
+                    <!-- End Header Navigation -->
+                    <div class="col-lg-6">
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="nav navbar-nav" data-in="#" data-out="#">
+                                <li class="dropdown">
+                                    <a href="index.html" class="dropdown-toggle active" data-toggle="dropdown">Inicio</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#servicios">Servicios</a></li>
+                                        <li><a href="#conocenos">Conocenos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="soluciones.html" class="dropdown-toggle" data-toggle="dropdown">Soluciones Tecnologicas</a>
+                                    <ul class="dropdown-menu">
+                                        <!-- Agrega aquí los elementos del submenú -->
+                                        <li><a class="" href="soluciones.html#somos">¿Qué somos?</a></li>
+                                        <li><a href="soluciones.html#automatizacion">Automatización</a></li>
+                                        <li><a href="soluciones.html#digitalizacion">Digitalización</a></li>
+                                        <li><a href="soluciones.html#efectividad">Efectividad de Equipos</a></li>
+                                        <li><a href="soluciones.html#colision">Tecnología  Anticolisión</a></li>
+                                        <li><a href="soluciones.html#iluminacion">Iluminación</a></li> 
+                                        <li><a href="soluciones.html#telecomunicaciones">Telecomunicación</a></li> 
+                                        <li><a href="soluciones.html#tecnologiasesp">Tecnolgías Especiales</a></li>
+                                        <li><a href="soluciones.html#serviciosesp">Servicios Especiales</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="nosotros.html" class="dropdown-toggle" data-toggle="dropdown">Nosotros</a>
+                                    <ul class="dropdown-menu">
+                                        <!-- Agrega aquí los elementos del submenú -->
+                                        <!-- <li><a href="#">Opción 1</a></li>
+                                        <li><a href="#">Opción 2</a></li> -->
+    
+                                    </ul>
+                                </li>
+                                <!-- <li class="dropdown">
+                                    <a href="casos_exito.html" class="dropdown-toggle" data-toggle="dropdown">Casos de Exito</a> 
+                                </li> -->
+                                <li class="dropdown">
+                                    <a href="contactanos.html" class="dropdown-toggle" data-toggle="dropdown">Contactanos</a> 
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+    
+                    <!-- Start Atribute Navigation -->
+    
+                    <div class="col-lg-3">
+                        <div class="attr-nav">
+                            <a class="btn primary intercalar2" data-wow-delay="900ms" href="contactanos.html">Contactanos</h3></a>
+                        </div> 
+                    </div>       
+                    
+                    <!-- End Atribute Navigation -->
+    
                 </div>
-                <!-- /.navbar-collapse -->
-
-                <!-- Start Atribute Navigation -->
-
-                <div class="col-lg-3">
-                    <div class="attr-nav">
-                        <a class="btn primary intercalar2" data-wow-delay="900ms" href="contactanos.html">Contactanos</h3></a>
-                    </div> 
-                </div>       
-                
-                <!-- End Atribute Navigation -->
-
+    
             </div>
-
-        </div>
-    </nav>
-    <!-- End Navigation -->
+        </nav>
+        <!-- End Navigation -->
     </header>
     <!-- End Header -->
 
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area banner-style-five auto-height bg-dark text-light text-multi-weight">
+    <div class="banner-area banner-style-five auto-height bg-dark text-light text-multi-weight" id="somos">
         <div class="banner-items">
             <div class="container">
                 <div class="row align-center">
@@ -130,7 +159,7 @@
 
     <!-- Start Automatización
     ============================================= -->
-    <div class="about-style-two-area bg-gray default-padding">
+    <div class="about-style-two-area bg-gray default-padding" id="automatizacion">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-6 about-style-two">
@@ -173,7 +202,7 @@
 
     <!-- Start Digitalizacíon
     ============================================= -->
-    <div class="about-style-two-area bg-gray default-padding" style=" background-color:#009CD8" >
+    <div class="about-style-two-area bg-gray default-padding" style=" background-color:#009CD8"  id="digitalizacion">
         <div class="container">
             <div class="row align-center" style="flex-direction: row-reverse;">
                 <div class="col-lg-6 about-style-two">
@@ -211,12 +240,12 @@
 
     <!-- Start Efectividad
     ============================================= -->
-    <div class="about-style-two-area bg-gray default-padding" style=" background-color:#009CD8">
+    <div class="about-style-two-area bg-gray default-padding" style=" background-color:#009CD8" id="efectividad">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-6 about-style-two">
                     <div class="thumb">
-                        <img src="assets/img/soluciones/automatizacion.png" alt="Thumb" class="intercalar2">
+                        <img src="assets/img/soluciones/efectividad.png" style="border-radius:10px" alt="Thumb" class="intercalar2">
                     </div>
                 </div>
                 <div class="col-lg-6 about-style-three">
@@ -248,7 +277,7 @@
 
     <!-- Start Anticolisión
     ============================================= -->
-    <div class="about-style-two-area bg-gray default-padding" style=" background-color:#009CD8" >
+    <div class="about-style-two-area bg-gray default-padding" style=" background-color:#009CD8"  id="colision">
         <div class="container">
             <div class="row align-center" style="flex-direction: row-reverse;">
                 <div class="col-lg-6 about-style-two">
@@ -284,7 +313,7 @@
     <!-- End Anticolisión -->
 
     <!-- Star text Iluminacion -->
-    <div class="banner_centrar" style="background-color: black;">
+    <div class="banner_centrar" style="background-color: black;" id="iluminacion">
         <h1 style="color:#ffffff; font-size: 40px; font-style: normal; font-weight: 900;line-height: 48px; /* 100% */ letter-spacing: -1px;">Iluminación</h1> 
         <p style="font-size: 18px;font-style: normal;font-weight: 400;line-height: 28px; color:#ffffff;">
             Desarrollamos soluciones de iluminación superiores, combinando iluminación natural con luminarias LED, utilizando 
@@ -300,7 +329,7 @@
 
     <!-- Start Telecomunicaciones
     ============================================= -->
-    <div class="about-style-two-area bg-gray default-padding" style=" background-color:#000000">
+    <div class="about-style-two-area bg-gray default-padding" style=" background-color:#000000" id="telecomunicaciones">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-6 about-style-two">
@@ -308,7 +337,7 @@
                         <img src="assets/img/soluciones/telecomunicaciones.png" alt="Thumb" class="intercalar2">
                     </div>
                 </div>
-                <div class="col-lg-6 about-style-three">
+                <div class="col-lg-6 about-style-three" >
                     <h2 class="heading" style="color:#ffffff;font-size: 40px;font-style: normal;font-weight: 900;line-height: 64px; /* 98.81% */letter-spacing: -2px;">
                         Telecomunicaciones</h2>
                     <p style="text-align: justify;
@@ -329,8 +358,11 @@
                         como el tendido, conectorización, fusión, organización y 
                         certificación.
                     </p>
-                    <img src="assets/img/soluciones/t1.png" alt="" class="about-style-two thumb ">
-                    <img src="assets/img/soluciones/t2.png" alt="" class="about-style-two thumb ">
+                    <div class="center">
+                        <img src="assets/img/soluciones/t1.png" alt="" class="about-style-two thumb ">
+                        <img src="assets/img/soluciones/t2.png" alt="" class="about-style-two thumb ">
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -338,7 +370,7 @@
     <!-- End Telecomunicaciones -->
 
     <!-- Star text Tecnologias Especiales -->
-    <div class="banner_centrar" style="background-color: black;">
+    <div class="banner_centrar" style="background-color: black;" id="tecnologiasesp">
         <h1 style="color:#ffffff; font-size: 40px; font-style: normal; font-weight: 900;line-height: 48px; /* 100% */ letter-spacing: -1px;">Tecnologías <span style="color:#009cd8">Especiales</span></h1> 
     </div>
     <!-- End text Tecnologias Especiales -->
@@ -405,7 +437,7 @@
                         <img src="assets/img/soluciones/sistemas1.png"  alt="Thumb" class="intercalar" >
                         <img src="assets/img/soluciones/sistemas2.png" alt="Thumb" style="height: 270px;
                         border-color: transparent;
-                        margin-bottom: -160px;" class="intercalar2"  >
+                        margin-bottom: -90px;" class="intercalar2"  >
                     </div>
                 </div>
                 <div class="col-lg-6 about-style-three">
@@ -542,7 +574,7 @@
 
     <!-- Start Serviciois Adicionales
     ============================================= -->
-    <div class="services-style-four-area default-padding" style="background-color: #eaeaea00;">
+    <div class="services-style-four-area default-padding" style="background-color: #eaeaea00;" id="serviciosesp">
         <div class="banner_centrar" style="background-color: rgba(0, 0, 0, 0);">
             <h1 style="color:#333333; font-size: 40px; font-style: normal; font-weight: 900;line-height: 48px; /* 100% */ letter-spacing: -1px;">Servicios <span style="color:#009cd8">Especiales</span></h1> 
         </div>
@@ -556,10 +588,22 @@
                             <div class="thumb">
                                 <img src="assets/img/soluciones/servicios1.png" alt="Thumb">
 
-                                <div class="shape" style="background-image: url(assets/img/shape/brush.png);"></div>
+                               
                             </div>
                             <div class="content">
-                                <h4><a href="#">Servicios Tecnicos</a></h4>
+                                <h4
+                                style="
+                                background-color: #009CD8;
+                                display: flex;
+                                color: white;
+                                border-radius: 12px;
+                                padding-top: 12px;
+                                padding-bottom: 10px;
+                                position: relative;
+                                margin-top: -80px;
+                                z-index: 2;
+                                justify-content: center;
+                                align-items: center;"><a style="color:white" href="#">SERVICIOS TECNOLOGICOS</a></h4>
                                 <p>
                                     Ofrecemos servicios técnicos 
                                     de atención en planta por 
@@ -577,16 +621,27 @@
                             <div class="thumb">
                                 <img src="assets/img/soluciones/servicios2.png" alt="Thumb">
 
-                                <div class="shape" style="background-image: url(assets/img/shape/brush.png);"></div>
+                                
                             </div>
                             <div class="content">
-                                <h4><a href="#">Productos</a></h4>
+                                <h4 style="
+                                background-color: #009CD8;
+                                display: flex;
+                                color: white;
+                                border-radius: 12px;
+                                padding-top: 12px;
+                                padding-bottom: 10px;
+                                position: relative;
+                                margin-top: -80px;
+                                z-index: 2;
+                                justify-content: center;
+                                align-items: center;"><a style="color:white" href="#">PRODUCTOS</a></h4>
                                 <p>
-                                    Suministramos:
+                                    <span style="color:rgb(19, 19, 19); font-weight: 900;" >Suministramos:</span> 
                                     Instrumentación de campo: 
                                     (Presión, Nivel, Flujo y 
-                                    Temperatura) Elementos de 
-                                    Automatización: (PLC, 
+                                    Temperatura) Elementos de
+                                    <span style="color:rgb(19, 19, 19); font-weight: 900;" > Automatización:</span> (PLC, 
                                     Módulos, Pantallas HMI, 
                                     Fuentes, conectores, Cables 
                                     y accesorios) Variadores de 
@@ -603,10 +658,21 @@
                             <div class="thumb">
                                 <img src="assets/img/soluciones/servicios3.png" alt="Thumb">
 
-                                <div class="shape" style="background-image: url(assets/img/shape/brush.png);"></div>
+                               
                             </div>
                             <div class="content">
-                                <h4><a href="#">Mantenimiento</a></h4>
+                                <h4 style="
+                                background-color: #009CD8;
+                                display: flex;
+                                color: white;
+                                border-radius: 12px;
+                                padding-top: 12px;
+                                padding-bottom: 10px;
+                                position: relative;
+                                margin-top: -80px;
+                                z-index: 2;
+                                justify-content: center;
+                                align-items: center;"><a style="color:white" href="#">MANTENIMIENTO</a></h4>
                                 <p>
                                     Ofrecemos servicios de 
                                     mantenimiento a sistemas de 
@@ -625,10 +691,21 @@
                             <div class="thumb">
                                 <img src="assets/img/soluciones/servicios4.png" alt="Thumb">
 
-                                <div class="shape" style="background-image: url(assets/img/shape/brush.png);"></div>
+                                
                             </div>
                             <div class="content">
-                                <h4><a href="#">Capacitaciones</a></h4>
+                                <h4 style="
+                                background-color: #009CD8;
+                                display: flex;
+                                color: white;
+                                border-radius: 12px;
+                                padding-top: 12px;
+                                padding-bottom: 10px;
+                                position: relative;
+                                margin-top: -80px;
+                                z-index: 2;
+                                justify-content: center;
+                                align-items: center;"><a style="color:white" href="#">CAPACIDADES</a></h4>
                                 <p>
                                     Ofrecemos capacitaciones 
                                     en automatización e 

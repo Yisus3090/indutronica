@@ -565,6 +565,36 @@
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+	.con_baner{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.titulo_1{
+		font-size: 2rem;
+	}
+	.titulo_2{
+		font-size: 2rem;
+	}
+	.cont_1{
+		display: none;
+	}
+	.p2{
+		margin-right: -40px
+	}
+	.container_1{
+		height: 70vh;
+	}
+	.heading{
+		text-align: center;
+	}
+	.center{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 	.banner_centrar{
 		padding: 35px 50px 0px 50px;
 	  }
@@ -1378,6 +1408,14 @@
 	footer .footer-bottom li::before {
 		left: -9px;
 	}
+	.banner_formulario{
+		height: 110vh;
+	}
+	.contact-content form input, .contact-content form textarea{
+		min-height:20px;
+	}
+
+
 }
 
 
@@ -1387,6 +1425,9 @@
 	.side {
 		padding: 50px;
 		width: 400px;
+	}
+	.banner_formulario{
+		height: 145vh;
 	}
 	.attr-nav {
 		display: inline-block;
