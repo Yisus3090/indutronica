@@ -12,7 +12,7 @@
     <title>Indutronica</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/logo.png" width="16" height="16" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.png" width="16" height="16" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -76,7 +76,6 @@
                                 <a href="soluciones.html" class="dropdown-toggle" data-toggle="dropdown">Soluciones Tecnologicas</a>
                                 <ul class="dropdown-menu">
                                     <!-- Agrega aquí los elementos del submenú -->
-                                    <li><a class="" href="soluciones.html#somos">¿Qué somos?</a></li>
                                     <li><a href="soluciones.html#automatizacion">Automatización</a></li>
                                     <li><a href="soluciones.html#digitalizacion">Digitalización</a></li>
                                     <li><a href="soluciones.html#efectividad">Efectividad de Equipos</a></li>
@@ -88,18 +87,23 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="nosotros.html" class="dropdown-toggle" data-toggle="dropdown">Nosotros</a>
-                                <ul class="dropdown-menu">
-                                    <!-- Agrega aquí los elementos del submenú -->
-                                    <!-- <li><a href="#">Opción 1</a></li>
-                                    <li><a href="#">Opción 2</a></li> -->
-
-                                </ul>
+                                <a href="nosotros.html" class="dropdown" data-toggle="">Nosotros</a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="nosotros.html#que_somos">Que Somos</a></li>
+                                    <li><a href="nosotros.html#que_somos">Nuestro Proposito</a></li>
+                                    <li><a href="nosotros.html#mision">Misión y Visión</a></li>
+                                    <li><a href="nosotros.html#historia">Historia</a></li>
+                                    <li><a href="nosotros.html#valores">Valores Coorporativos</a></li>
+                                    <li><a href="nosotros.html#politica_integrada">Politica Integrada</a></li>
+                                    <li><a href="nosotros.html#informes">Informes y Certificado</a></li>
+                                    <li><a href="#">Premios</a></li>
+                                    <li><a href="https://portalmgx.appsges.com/portal_auto_gestion/">Portal de Autogestión</a></li>
+                                </ul> -->
                             </li>
                             <!-- <li class="dropdown">
                                 <a href="casos_exito.html" class="dropdown-toggle" data-toggle="dropdown">Casos de Exito</a> 
                             </li> -->
-                            <li class="dropdown">
+                            <li class="dropdown" id="oculto">
                                 <a href="contactanos.html" class="dropdown-toggle" data-toggle="dropdown">Contactanos</a> 
                             </li>
                         </ul>
@@ -125,9 +129,11 @@
     <!-- End Header -->
 
     <!-- Start Banner     ============================================= -->
-
-    <div class="banner-area banner-style-five auto-height bg-dark text-light text-multi-weight ">
+    <div class="banner-area banner-style-five auto-height bg-dark text-light text-multi-weight">
         <div class="banner-items">
+            <video id="video-bg" autoplay muted loop>
+                <source src="assets/img/banner/inductronica01.mp4" type="video/mp4">
+            </video>
             <div class="container">
                 <div class="row align-center">
                     <div class="col-lg-6">
@@ -135,21 +141,16 @@
                             <h2 class="wow slideInLeft">Indutronica <br>
                                 Del Caribe S.A.S</h2>
                             <p class="wow fadeInUp" data-wow-delay="500ms">
-                                27 años entregando soluciones de ingieneria de alto impacto a los distintos sectos productivo.
+                               <span id="fecha" ></span> años entregando soluciones de ingeniería de alto impacto a los distintos sectores productivos.
                             </p>
                             <a class="btn btn-light primary effect btn-md wow fadeInDown" data-wow-delay="900ms" href="#">EXPLORA</a>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        
-                    </div>
+                    <div class="col-lg-6"></div>
                 </div>
             </div>
-        </div>      
+        </div>
     </div>
-
-
-    
     <!-- End Banner -->
 
      <!-- Banner 1
@@ -182,8 +183,11 @@
     </div>
     <!-- End Fun Factor Area -->
 
-        <!-- Star Services 1 ============================================= -->
+    <!-- Star Services 1 ============================================= -->
     <div  class="services-style-three-area relative text-center default-padding" id="servicios" >
+        <div class="banner_centrar" style="background-color: rgba(0, 0, 0, 0);">
+            <h1 style="color:#333333;font-family: Overpass; font-size: 48px; font-style: normal; font-weight: 900;line-height: 48px; /* 100% */ letter-spacing: -1px;">Servicios que<span style="color:#009cd8"> ofrecemos</span></h1> 
+        </div>
         <div class="container">
             <div class="row">
                 <!-- Signle Item -->
@@ -333,7 +337,7 @@
                                     Nuestros objetivos en Seguridad y Salud en el Trabajo (SST), son mantener nuestros índices en cero accidentes, lesiones o 
                                     daños, cero enfermedades laborales, utilizando técnicas preventivas y aplicando siempre prácticas de trabajo seguro
                                 </p>
-                                <a class="btn-common" href="#">SABER MÁS</a>
+                                <a class="btn-common" href="">SABER MÁS</a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -345,12 +349,12 @@
                                 <div class="shape" style="background-image: url(assets/img/shape/brush.png);"></div>
                             </div>
                             <div class="content">
-                                <h4><a href="#">Misión y Visión</a></h4>
+                                <h4><a href="nosotros.html#mision">Misión y Visión</a></h4>
                                 <p>
                                     Nuestra visión y misión como empresa giran entorno a 
                                     Ofrecer Servicios de Asesoría, Consultoría y Direccionamiento Tecnológico.
                                 </p>
-                                <a class="btn-common" href="#">SABER MÁS</a>
+                                <a class="btn-common" href="nosotros.html#mision">SABER MÁS</a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -362,7 +366,7 @@
                                 <div class="shape" style="background-image: url(assets/img/shape/brush.png);"></div>
                             </div>
                             <div class="content">
-                                <h4><a href="#">Sostenibilidad</a></h4>
+                                <h4><a href="nosotros.html#informes">Sostenibilidad</a></h4>
                                 <p>
                                     El objetivo de INDUTRONICA DEL CARIBE S.A.S es aplicar soluciones tecnológicas para mejorar la productividad en el 
                                     sector manufacturero, lo que tiene un impacto positivo en la sostenibilidad al reducir el desperdicio de materias primas
@@ -402,7 +406,7 @@
                                     La Dirección de INDUTRÓNICA DEL CARIBE S.A.S. define sus políticas en términos de calidad, seguridad y salud en el trabajo, 
                                     medio ambiente y responsabilidad social...
                                 </p>
-                                <a class="btn-common" href="#">SABER MÁS</a>
+                                <a class="btn-common" href="nosotros.html#politica_integrada">SABER MÁS</a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -418,7 +422,7 @@
         <div class="slider">
             <div class="slide-track">
                 <div class="slide">
-                    <a href="https://www.veridapt.com/">
+                    <a href="https://www.veridapt.com/" >
                         <img class="filtro" src="assets/img/socios/i1.png" height="50" width="150" alt="" />
                     </a>
                 </div>
@@ -428,27 +432,27 @@
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="">
+                    <a href="https://hexagon.com/">
                         <img class="filtro" src="assets/img/socios/i3.png" height="50" width="150" alt="" />
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="https://www.youtube.com/watch?v=_PJvpq8uOZM&list=RD_PJvpq8uOZM&start_radio=1">
+                    <a href="https://www.acuitybrands.com/">
                         <img class="filtro" src="assets/img/socios/i4.png" height="50" width="150" alt="" />
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="">
+                    <a href="https://ekabel.net/es/home-es/">
                         <img class="filtro" src="assets/img/socios/i5.png" height="50" width="150" alt="" />
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="">
+                    <a href="https://www.siemon.com/es">
                         <img class="filtro" src="assets/img/socios/i6.png" height="50" width="150" alt="" />
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="">
+                    <a href="https://www.siemens.com/co/es.html">
                         <img class="filtro" src="assets/img/socios/i7.png" height="50" width="150" alt="" />
                     </a>
                 </div>
@@ -463,27 +467,27 @@
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="">
+                    <a href="https://hexagon.com/">
                         <img class="filtro" src="assets/img/socios/i3.png" height="50" width="150" alt="" />
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="https://www.youtube.com/watch?v=_PJvpq8uOZM&list=RD_PJvpq8uOZM&start_radio=1">
+                    <a href="https://www.acuitybrands.com/">
                         <img class="filtro" src="assets/img/socios/i4.png" height="50" width="150" alt="" />
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="">
+                    <a href="https://ekabel.net/es/home-es/">
                         <img class="filtro" src="assets/img/socios/i5.png" height="50" width="150" alt="" />
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="">
+                    <a href="https://www.siemon.com/es">
                         <img class="filtro" src="assets/img/socios/i6.png" height="50" width="150" alt="" />
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="">
+                    <a href="https://www.siemens.com/co/es.html">
                         <img class="filtro" src="assets/img/socios/i7.png" height="50" width="150" alt="" />
                     </a>
                 </div>
@@ -493,19 +497,17 @@
     <!-- Start contactanos  
         ============================================= -->
     <div class="fun-factor-area  text-light" >
-
-        
         <div class="container">
             <div class="fun-fact-items text-center default-padding"  >
                 <div class="row">
                     <div class="col-lg-4 col-md-6 item">
                         <div class="">
                             <div class="counter">
-                                <div class="time"><a href="https://api.whatsapp.com/send?phone=+573122462446&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n"><img src="assets/img/servicios/telefono.png" width="145" height="145" alt="telefono" class="intercalar2"></a></div>
+                                <div class="time"><a href="https://api.whatsapp.com/send?phone=+573205663783&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n"><img src="assets/img/servicios/telefono.png" width="145" height="145" alt="telefono" class="intercalar2"></a></div>
                             </div>
-                            <a href="https://api.whatsapp.com/send?phone=+573122462446&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n"><span style=" transition: color 0.3s ease;" class="medium"  onmouseover="this.style.color='#009cd8'" onmouseout="this.style.color='#ffffff'">+57 3122462446 <br></a>
+                            <a href="https://api.whatsapp.com/send?phone=+573205663783&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n"><span style=" transition: color 0.3s ease;" class="medium"  onmouseover="this.style.color='#009cd8'" onmouseout="this.style.color='#ffffff'">+57 3205663783  <br></a>
                             
-                                +57 605-3851883</span> <br>
+                                (605) 3851883 – 3851882 </span> <br>
                             <span style="color:rgba(255, 255, 255, 0.524); transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255, 255, 255, 0.524)'">8:00 am - 9:00 pm</span>
                         </div>
                     </div>
@@ -514,7 +516,8 @@
                             <div class="counter">
                                 <div class="time"><a href=""> <img src="assets/img/servicios/correo.png" width="145" height="145"  alt="correo" class="intercalar2"></a></div>
                             </div>
-                            <span class="medium" style=" transition: color 0.3s ease;" class="medium"  onmouseover="this.style.color='#009cd8'" onmouseout="this.style.color='#ffffff'">Indutronica@indutronica.com</span> <br>
+                            
+                            <span class="medium" style=" transition: color 0.3s ease;" class="medium"  onmouseover="this.style.color='#009cd8'" onmouseout="this.style.color='#ffffff'">indutronica@indutronica.com</span> <br>
                             <span style="color:rgba(255, 255, 255, 0.524); transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255, 255, 255, 0.524)'" >Gmail</span>
                         </div>
                     </div>
@@ -533,7 +536,7 @@
         </div>
     </div>
     <!-- End contactanos  -->
-    <a href="https://api.whatsapp.com/send?phone=+573122462446&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n" class="float" target="_blank"  id="reservaBtn"><i class="fa fa-whatsapp my-float"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=+573205663783&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n" class="float" target="_blank"  id="reservaBtn"><i class="fa fa-whatsapp my-float"></i></a>
 
     <!-- Start Footer 
     ============================================= -->
@@ -551,16 +554,16 @@
                         <h4 class="widget-title">COMPAÑIA</h4>
                         <ul>
                             <li>
-                                <a href="index.html"><i class="fas fa-angle-right"></i> ¿Quines somos?</a>
+                                <a href="nosotros.html#que_somos"><i class="fas fa-angle-right"></i> ¿Quines somos?</a>
                             </li>
                             <li>
-                                <a href="about-us.html"><i class="fas fa-angle-right"></i> Historia</a>
+                                <a href="nosotros.html#historia"><i class="fas fa-angle-right"></i> Historia</a>
                             </li>
                             <li>
-                                <a href="about-us.html"><i class="fas fa-angle-right"></i> Misión</a>
+                                <a href="nosotros.html#mision"><i class="fas fa-angle-right"></i> Misión</a>
                             </li>
                             <li>
-                                <a href="about-us.html"><i class="fas fa-angle-right"></i> Visión</a>
+                                <a href="nosotros.html#mision"><i class="fas fa-angle-right"></i> Visión</a>
                             </li>
                         </ul>
                     </div>
@@ -570,22 +573,22 @@
                         <h4 class="widget-title">SERVICIOS</h4>
                         <ul>
                             <li>
-                                <a href="services-details.html"><i class="fas fa-angle-right"></i> Iluminación</a>
+                                <a href="soluciones.html#iluminacion"><i class="fas fa-angle-right"></i> Iluminación</a>
                             </li>
                             <li>
-                                <a href="services-details.html"><i class="fas fa-angle-right"></i> Digitalización</a>
+                                <a href="soluciones.html#digitalizacion"><i class="fas fa-angle-right"></i> Digitalización</a>
                             </li>
                             <li>
-                                <a href="services-details.html"><i class="fas fa-angle-right"></i> Telecomunicaciones</a>
+                                <a href="soluciones.html#telecomunicaciones"><i class="fas fa-angle-right"></i> Telecomunicaciones</a>
                             </li>
                             <li>
-                                <a href="services-details.html"><i class="fas fa-angle-right"></i> Servicios Adicionales</a>
+                                <a href="soluciones.html#serviciosesp"><i class="fas fa-angle-right"></i> Servicios Adicionales</a>
                             </li>
                             <li>
-                                <a href="services-details.html"><i class="fas fa-angle-right"></i> Tecnologías Especiales</a>
+                                <a href="soluciones.html#tecnologiasesp"><i class="fas fa-angle-right"></i> Tecnologías Especiales</a>
                             </li>
                             <li>
-                                <a href="services-details.html"><i class="fas fa-angle-right"></i> Automatización y Control</a>
+                                <a href="soluciones.html#automatizacion"><i class="fas fa-angle-right"></i> Automatización y Control</a>
                             </li>
                         </ul>
                     </div>
@@ -595,14 +598,13 @@
                         <h4 class="widget-title">SOCIAL</h4>
                         <div class="social">
                             <ul>
-                                    <i class='bx bxl-linkedin social-iconos' ></i>
+                                    <a href="https://www.linkedin.com/company/indutronica-del-caribe/mycompany/?viewAsMember=tru"><i class='bx bxl-linkedin social-iconos' ></i></a> 
 
-                                    <i class='bx bxl-instagram social-iconos' ></i>
+                                    <a href="https://www.instagram.com/indutronicadelcaribe/"><i class='bx bxl-instagram social-iconos' ></i></a> 
 
-                                    <i class='bx bxl-facebook social-iconos' ></i>
+                                    <a href="https://www.facebook.com/indutronicadelcaribesas"><i class='bx bxl-facebook social-iconos'></i></a>
 
-                                    <i class='bx bxl-youtube social-iconos' ></i>
-                                    
+                                    <a href="https://www.youtube.com/channel/UCD75WAXYzVBSlEeuUyT96Bg"><i class='bx bxl-youtube social-iconos' ></i></a>                                    
                             </ul>
                         </div>
                     </div>
@@ -620,15 +622,7 @@
                     </div>
                     <div class="col-lg-6 text-right link">
                         <ul>
-                            <li>
-                                <a href="#">Terms</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#">Support</a>
-                            </li>
+                            <p>Desarrollado por <a href="https://github.com/Yisus3090">  Jesus Jaraba  <3 </a>  </p>
                         </ul>
                     </div>
                 </div>
@@ -638,6 +632,35 @@
     <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('video-bg');
+        
+            video.addEventListener('loadeddata', function () {
+                video.play();
+            });
+        
+            video.addEventListener('ended', function () {
+                video.play();
+            });
+        });
+        
+        // Función para actualizar la fecha y mostrarla en el elemento con id "fecha"
+        function actualizarFecha() {
+            var fecha = new Date();
+            var año = fecha.getFullYear();
+            
+            // Formatear la fecha como desees, aquí se utiliza el formato "dd/mm/yyyy"
+            var formatoFecha = ('0' + fecha.getDate()).slice(-2) + '/' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '/' + año;
+
+            // Mostrar la fecha en el elemento con id "fecha"
+            document.getElementById('fecha').textContent = formatoFecha;
+        }
+
+        // Llamar a la función inicialmente y luego cada segundo (puedes ajustar el intervalo según tus necesidades)
+        setInterval(actualizarFecha, 1000);
+    </script>
 
     <!-- jQuery Frameworks
     ============================================= -->

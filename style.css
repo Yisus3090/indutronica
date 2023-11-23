@@ -500,12 +500,22 @@ input {
 
   display: flex;
   justify-content: flex-end;
+}
+.f3{
+  display: flex;
+  justify-content: center;
   padding: 15px;
 }
 .container_3{
   display: flex;
   background-color: #000000;
   justify-content: space-evenly;
+}
+.container_4{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  flex-direction: row-reverse
 }
 .contenedor_olas{
     width: 100%;
@@ -8878,7 +8888,7 @@ nav.navbar.bootsnav.navbar-transparent.white .attr-nav {
 }
 
 .banner-style-five {
-  padding-top: 250px;
+  padding-top: 0px;
 }
 
 .banner-style-five.auto-height .content {
@@ -9193,7 +9203,7 @@ a.btn-common:hover {
 /* Tablet Layout: 768px.*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-style-five {
-    padding-top: 220px;
+    padding-top: 0px;
   }
 
   .banner-style-five .thumb {
@@ -9247,7 +9257,7 @@ a.btn-common:hover {
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
   .banner-style-five {
-    padding-top: 90px;
+    padding-top: 0px;
   }
 
   .banner-style-five.auto-height .content {
@@ -9298,23 +9308,20 @@ a.btn-common:hover {
 /* Mision y Vision */
 
 .m_v{
-  width: 100%;
-  height: 50vh;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:45px;
 }
 .mision{
-  width: 30%;
+  max-width: 500px;
   background-color:#253166;
   margin: 40px;
   border-radius: 10px;
 }
 
 .vision{
-  width: 30%;
+  max-width: 500px;
   background-color:#009CD8;
   margin: 40px;
   border-radius: 10px;
@@ -9341,7 +9348,7 @@ a.btn-common:hover {
   color: #FFF;
   text-align: center;
   font-family: Overpass;
-  font-size: 19px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
@@ -9374,6 +9381,24 @@ a.btn-common:hover {
   padding: 10%;
   margin-top: -48px;
 }
+#politica2{
+  color: #FFF;
+  font-family: Overpass;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px; /* 90% */
+  letter-spacing: -1px
+}
+#t-politica{
+  color: #FFF;
+  font-family: Overpass;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align:justify
+  }
 .container_politica{
   width: 100%;
   height: 50vh;
@@ -9400,4 +9425,77 @@ a.btn-common:hover {
   justify-content: center;
   flex-direction: column;
   padding: 25px 0px 25px 0px;
+}
+
+
+
+/* estilos del banner con video */
+
+.banner-area {
+  position: relative;
+  overflow: hidden;
+}
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.banner-items {
+  position: relative;
+  z-index: 1;
+}
+#oculto{
+  display: none;
+}
+
+#title-200{
+  font-weight: bold;
+  font-size: 4rem;
+  border-color: white;
+  border-bottom: 2px solid;
+}
+#sub-200{
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: -2px;
+}
+#p-200{
+  text-align: justify;
+  font-family: Overpass;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.5px;
+}
+#karen{
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+}
+#karen2{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+}
+.sostenible{
+  margin: 0px 0px 40px 0px;
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.iso-45001{
+  background-image: url('assets/img/nosotros/iso.png');
+  width: 100%;
+  height: 445px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -429,7 +429,7 @@ nav.bg-dark.navbar.bootsnav {
 nav.navbar.bootsnav ul.nav>li>a {
 	color: var(--color-heading);
 	background-color: transparent !important;
-	font-size: 15px;
+	font-size: 12px;
 	letter-spacing: 0.06em;
 	padding: 35px 15px;
 	text-transform: uppercase;
@@ -3247,6 +3247,6 @@ nav.navbar.nav-full-width .navbar-brand {
 
 @media only screen and (min-width: 1024px) and (max-width: 1301px) {
 	nav.navbar.bootsnav ul.nav>li>a {
-		font-size: 14px;
+		font-size: 12px;
 	}
 }
