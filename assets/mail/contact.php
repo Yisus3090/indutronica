@@ -14,21 +14,23 @@ $email    = $_POST['email'];
 $phone     = $_POST['phone'];
 $comments = $_POST['comments'];
 
+
+
 if(trim($name) == '') {
-	echo '<div class="alert alert-error">You must enter your name.</div>';
+	echo '<div class="alert alert-error">Ingrese su nombre</div>';
 	exit();
 } else if(trim($email) == '') {
 	echo '<div class="alert alert-error">You must enter email address.</div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="alert alert-error">You must enter a valid email address.</div>';
+	echo '<div class="alert alert-error">Por favor verifique su correo.</div>';
 	exit();
 } else if(trim($phone) == '') {
-	echo '<div class="alert alert-error">Please fill all fields!</div>';
+	echo '<div class="alert alert-error">Por favor verifique su numero</div>';
 	exit();
 }
 else if(trim($comments) == '') {
-	echo '<div class="alert alert-error">You must enter your comments</div>';
+	echo '<div class="alert alert-error">Usted debe escribir su asunto</div>';
 	exit();
 }
 
@@ -50,16 +52,17 @@ $address = "indutronica@indutronica.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'Contact Form';
+$e_subject = 'Nuevo cliente potencial desea comunicarse:';
 
 
 // Configuration option.
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "You have been contacted by $name, their additional message is as follows." . PHP_EOL . PHP_EOL;
-$e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name via email, $email";
+$e_body = "You have been contacted by " . htmlspecialchars($name) . ", their additional message is as follows." . PHP_EOL . PHP_EOL;
+$e_content = "\"" . htmlspecialchars($comments) . "\"" . PHP_EOL . PHP_EOL;
+$e_reply = "You can contact " . htmlspecialchars($name) . " via email, " . htmlspecialchars($email);
+
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
@@ -69,6 +72,9 @@ $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
+// Después de la línea $headers = ... en tu código PHP
+
+var_dump($name, $email, $phone, $comments); // Imprime los datos para verificar
 if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Email has sent successfully, echo a success page.
@@ -81,5 +87,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 } else {
 
 	echo 'ERROR!';
+
+
 
 }
