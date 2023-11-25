@@ -342,7 +342,7 @@ input {
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(assets/img/banner/banner2.png);
+  background-image: url(assets/img/banner2.png);
 }
 
 .banner_colombia{
@@ -358,7 +358,7 @@ input {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: url(assets/img/banner/banner4.png);
+  background-image: url(assets/img/banner4.png);
   background-repeat:round;
   padding: 15px;
   margin-top: 15px;
@@ -9358,7 +9358,7 @@ a.btn-common:hover {
   height: 30vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(assets/img/nosotros/mision.png);
+  background-image: url(assets/img/mision1.png);
   border-radius: 10px 10px 0px 0px;
 }
 .imagen2{
@@ -9366,7 +9366,7 @@ a.btn-common:hover {
   height: 30vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(assets/img/nosotros/vision.png);
+  background-image: url(assets/img/vision.png);
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -9493,7 +9493,7 @@ a.btn-common:hover {
 }
 
 .iso-45001{
-  background-image: url('assets/img/nosotros/iso.png');
+  background-image: url('assets/img/iso.png');
   width: 100%;
   height: 445px;
   background-size: cover;
