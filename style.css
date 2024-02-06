@@ -9497,3 +9497,14 @@ a.btn-common:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#message{
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #17a2b854;
+}
+#espacio_img{
+    padding: 0px 40px 0px 40px;
+    text-align: center;
+}
